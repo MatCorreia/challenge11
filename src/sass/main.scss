@@ -1,0 +1,210 @@
+@import "base";
+@import "variables";
+
+//* Header *//
+header {
+    font-family: $karla;
+
+    & a {
+        font-weight: $bold;
+    }
+}
+
+.header-view-plans {
+    font-weight: 600;
+    text-transform: uppercase;
+    background: white;
+    font-size: $fontSize;
+    color: black;
+    border: 2px solid black;
+    padding: 7px 35px;
+
+    &:hover {
+        background: black;
+        color: white;
+    }
+}
+
+//* Main *//
+main {
+    background-color: $darkViolet;
+    color: white;
+    height: 550px;
+
+    & h1 {
+        font-size: 4rem;
+        font-weight: normal;
+        letter-spacing: 0.1em;
+        line-height: 1em;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 150px;
+            height: 2px;
+            margin-bottom: 50px;
+            background: white;
+        }
+    }
+}
+
+#main-hero {
+    background-image: url("../images/bg-pattern-intro-right-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.main-view-plans {
+    font-weight: 600;
+    text-transform: uppercase;
+    background: transparent;
+    font-size: $fontSize;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 35px;
+
+    &:hover {
+        background: white;
+        color: black;
+    }
+}
+
+//* Section Different *//
+.bg-different {
+    margin: 300px 0 150px 0;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 150px;
+        height: 2px;
+        margin-bottom: 50px;
+        background: rgb(201, 201, 201);
+    }
+}
+
+//* Section Dark Violet *//
+.bg-dark-violet {
+    background: $darkViolet;
+    padding: 50px 100px;
+    color: white;
+}
+
+#find {
+    background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+//* Footer *//
+
+.footer-insure {
+    & a {
+        color: $veryDarkViolet;
+        font-weight: 600;
+    }
+}
+
+.footer-tittle {
+    color: $darkGrayishViolet !important;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 767px) {
+    header.container {
+        max-width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin: 0;
+    }
+
+    main {
+        height: auto;
+
+        & h1 {
+            font-size: 2.8em;
+
+            &::before {
+                content: "";
+                display: none;
+            }
+        }
+    }
+
+    #main-hero {
+        background-image: url("../images/bg-pattern-intro-right-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    .header-view-plans {
+        background: $veryDarkViolet;
+        color: white;
+        border: 2px solid white;
+        padding: 7px 50px;
+
+        &:hover {
+            background: white;
+            color: black;
+        }
+    }
+
+    .navbar-collapse .collapse .show {
+        background-color: black;
+    }
+
+    .bg-different {
+        margin: 150px 0;
+
+        &::before {
+            content: "";
+            display: none;
+        }
+    }
+
+    .show {
+        background-color: $veryDarkViolet;
+        width: 100%;
+        height: 600px;
+        padding-top: 50px;
+        background-image: url(../images/bg-pattern-mobile-nav.svg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        & li {
+            margin: 5px 0;
+        }
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: rgb(255, 255, 255);
+        letter-spacing: 0.1em;
+
+        &:hover {
+            color: rgb(165, 165, 165)
+        }
+    }
+
+    .bg-dark-violet {
+        width: 400px;
+        padding: 50px;
+    }
+
+    #find {
+        background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+    }   
+}
+
+
+//* Test *//
+#hamburgerClose {
+    position: absolute;
+    display: none;
+    top: 10px;
+    right: 60px;
+    cursor: pointer;
+}

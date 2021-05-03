@@ -1,0 +1,19 @@
+@import "variables";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: $fontSize;
+    font-family: $karla;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $dMSerifDisplay;
+}
